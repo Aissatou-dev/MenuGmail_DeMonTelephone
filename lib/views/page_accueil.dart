@@ -7,6 +7,7 @@ class PageAccueil extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
             drawer: Drawer(
+              backgroundColor: const Color.fromARGB(255, 232, 244, 248),
           child: ListView(   
             padding: EdgeInsets.zero,
             children: [
@@ -48,7 +49,8 @@ class PageAccueil extends StatelessWidget {
                   print("vous avez clique sur le menu accueil");
                   Navigator.pushNamedAndRemoveUntil(context, '/page_accueil', (predicate) => false);//pour ne pas retourner en ariere on utilise (pushNamedAndRemoveUntil)aller sans retour
                 } ,
-                trailing: Icon(Icons.chevron_right),
+                
+                
               ),
                ListTile(
                 leading: Icon(Icons.shopping_cart),
@@ -57,7 +59,7 @@ class PageAccueil extends StatelessWidget {
                   print("vous avez clique sur le menu Boutique");
                   Navigator.pushNamedAndRemoveUntil(context, '/page-boutique', (predicate) => false);//pour ne pas retourner en ariere on utilise (pushNamedAndRemoveUntil)aller sans retour
                 } ,
-                trailing: Icon(Icons.chevron_right),
+                
               ),
                ListTile(
                 leading: Icon(Icons.countertops),
@@ -66,7 +68,7 @@ class PageAccueil extends StatelessWidget {
                   print("vous avez clique sur le menu compteur");
                   Navigator.pushNamedAndRemoveUntil(context, '/page-compteur', (predicate) => false);//pour ne pas retourner en ariere on utilise (pushNamedAndRemoveUntil)aller sans retour
                 } ,
-                trailing: Icon(Icons.chevron_right),
+                
               ) */
 
              ListTile(
@@ -76,7 +78,7 @@ class PageAccueil extends StatelessWidget {
                   print("vous avez clique sur le menu parametre");
                   Navigator.pushNamedAndRemoveUntil(context, '/page-accueil', (predicate) => false);//pour ne pas retourner en ariere on utilise (pushNamedAndRemoveUntil)aller sans retour
                 } ,
-                trailing: Icon(Icons.chevron_right),
+                
               ),
                
               ListTile(
@@ -86,7 +88,7 @@ class PageAccueil extends StatelessWidget {
                   print("vous avez clique sur le menu parametre");
                   Navigator.pushNamedAndRemoveUntil(context, '/page-accueil', (predicate) => false);//pour ne pas retourner en ariere on utilise (pushNamedAndRemoveUntil)aller sans retour
                 } ,
-                trailing: Icon(Icons.chevron_right),
+                
               ),
 
               ListTile(
@@ -96,7 +98,7 @@ class PageAccueil extends StatelessWidget {
                   print("vous avez clique sur le menu parametre");
                   Navigator.pushNamedAndRemoveUntil(context, '/page-accueil', (predicate) => false);//pour ne pas retourner en ariere on utilise (pushNamedAndRemoveUntil)aller sans retour
                 } ,
-                trailing: Icon(Icons.chevron_right),
+                
               ),
                 Padding( 
                   padding: EdgeInsets.all(16),
@@ -109,7 +111,7 @@ class PageAccueil extends StatelessWidget {
                   print("vous avez clique sur le menu parametre");
                   Navigator.pushNamedAndRemoveUntil(context, '/page-accueil', (predicate) => false);//pour ne pas retourner en ariere on utilise (pushNamedAndRemoveUntil)aller sans retour
                 } ,
-                trailing: Icon(Icons.chevron_right),
+                
               ),
               ListTile(
                 leading: Icon(Icons.schedule),
@@ -118,7 +120,7 @@ class PageAccueil extends StatelessWidget {
                   print("vous avez clique sur le menu parametre");
                   Navigator.pushNamedAndRemoveUntil(context, '/page-accueil', (predicate) => false);//pour ne pas retourner en ariere on utilise (pushNamedAndRemoveUntil)aller sans retour
                 } ,
-                trailing: Icon(Icons.chevron_right),
+                
               ),
               ListTile(
                 leading: Icon(Icons.priority_high),
@@ -127,7 +129,7 @@ class PageAccueil extends StatelessWidget {
                   print("vous avez clique sur le menu parametre");
                   Navigator.pushNamedAndRemoveUntil(context, '/page-accueil', (predicate) => false);//pour ne pas retourner en ariere on utilise (pushNamedAndRemoveUntil)aller sans retour
                 } ,
-                trailing: Icon(Icons.chevron_right),
+                
               ),
               ListTile(
                 leading: Icon(Icons.send),
@@ -136,7 +138,7 @@ class PageAccueil extends StatelessWidget {
                   print("vous avez clique sur le menu parametre");
                   Navigator.pushNamedAndRemoveUntil(context, '/page-accueil', (predicate) => false);//pour ne pas retourner en ariere on utilise (pushNamedAndRemoveUntil)aller sans retour
                 } ,
-                trailing: Icon(Icons.chevron_right),
+                
               ),
               ListTile(
                 leading: Icon(Icons.schedule_send),
@@ -145,7 +147,7 @@ class PageAccueil extends StatelessWidget {
                   print("vous avez clique sur le menu parametre");
                   Navigator.pushNamedAndRemoveUntil(context, '/page-accueil', (predicate) => false);//pour ne pas retourner en ariere on utilise (pushNamedAndRemoveUntil)aller sans retour
                 } ,
-                trailing: Icon(Icons.chevron_right),
+                
               ),
               ListTile(
                 leading: Icon(Icons.outbox),
@@ -153,8 +155,10 @@ class PageAccueil extends StatelessWidget {
                 onTap: (){
                   print("vous avez clique sur le menu parametre");
                   Navigator.pushNamedAndRemoveUntil(context, '/page-accueil', (predicate) => false);//pour ne pas retourner en ariere on utilise (pushNamedAndRemoveUntil)aller sans retour
+        
                 } ,
-                trailing: Icon(Icons.chevron_right),
+                trailing: Text("12"),
+                
               ),
               ListTile(
                 leading: Icon(Icons.drafts),
@@ -163,7 +167,7 @@ class PageAccueil extends StatelessWidget {
                   print("vous avez clique sur le menu parametre");
                   Navigator.pushNamedAndRemoveUntil(context, '/page-accueil', (predicate) => false);//pour ne pas retourner en ariere on utilise (pushNamedAndRemoveUntil)aller sans retour
                 } ,
-                trailing: Icon(Icons.chevron_right),
+                
               ),
               ListTile(
                 leading: Icon(Icons.mail),
@@ -172,7 +176,7 @@ class PageAccueil extends StatelessWidget {
                   print("vous avez clique sur le menu parametre");
                   Navigator.pushNamedAndRemoveUntil(context, '/page-accueil', (predicate) => false);//pour ne pas retourner en ariere on utilise (pushNamedAndRemoveUntil)aller sans retour
                 } ,
-                trailing: Icon(Icons.chevron_right),
+                
               ),
               ListTile(
                 leading: Icon(Icons.report),//report_gmailerrorred
@@ -181,7 +185,7 @@ class PageAccueil extends StatelessWidget {
                   print("vous avez clique sur le menu parametre");
                   Navigator.pushNamedAndRemoveUntil(context, '/page-accueil', (predicate) => false);//pour ne pas retourner en ariere on utilise (pushNamedAndRemoveUntil)aller sans retour
                 } ,
-                trailing: Icon(Icons.chevron_right),
+                
               ),
               ListTile(
                 leading: Icon(Icons.delete),
@@ -190,7 +194,7 @@ class PageAccueil extends StatelessWidget {
                   print("vous avez clique sur le menu parametre");
                   Navigator.pushNamedAndRemoveUntil(context, '/page-accueil', (predicate) => false);//pour ne pas retourner en ariere on utilise (pushNamedAndRemoveUntil)aller sans retour
                 } ,
-                trailing: Icon(Icons.chevron_right),
+                
               ),
               ListTile(
                 leading: Icon(Icons.subscriptions),
@@ -199,7 +203,7 @@ class PageAccueil extends StatelessWidget {
                   print("vous avez clique sur le menu parametre");
                   Navigator.pushNamedAndRemoveUntil(context, '/page-accueil', (predicate) => false);//pour ne pas retourner en ariere on utilise (pushNamedAndRemoveUntil)aller sans retour
                 } ,
-                trailing: Icon(Icons.chevron_right),
+                
               ),
               Padding( 
                 padding: EdgeInsets.all(16),
@@ -212,7 +216,7 @@ class PageAccueil extends StatelessWidget {
                   print("vous avez clique sur le menu parametre");
                   Navigator.pushNamedAndRemoveUntil(context, '/page-accueil', (predicate) => false);//pour ne pas retourner en ariere on utilise (pushNamedAndRemoveUntil)aller sans retour
                 } ,
-                trailing: Icon(Icons.chevron_right),
+                
               ),
                ListTile(
                 leading: Icon(Icons.contacts),
@@ -221,7 +225,7 @@ class PageAccueil extends StatelessWidget {
                   print("vous avez clique sur le menu parametre");
                   Navigator.pushNamedAndRemoveUntil(context, '/page-accueil', (predicate) => false);//pour ne pas retourner en ariere on utilise (pushNamedAndRemoveUntil)aller sans retour
                 } ,
-                trailing: Icon(Icons.chevron_right),
+                
               ),
                ListTile(
                 leading: Icon(Icons.settings),
@@ -230,7 +234,7 @@ class PageAccueil extends StatelessWidget {
                   print("vous avez clique sur le menu parametre");
                   Navigator.pushNamedAndRemoveUntil(context, '/page-accueil', (predicate) => false);//pour ne pas retourner en ariere on utilise (pushNamedAndRemoveUntil)aller sans retour
                 } ,
-                trailing: Icon(Icons.chevron_right),
+                
               ),
                ListTile(
                 leading: Icon(Icons.help_outline),
@@ -239,7 +243,7 @@ class PageAccueil extends StatelessWidget {
                   print("vous avez clique sur le menu parametre");
                   Navigator.pushNamedAndRemoveUntil(context, '/page-accueil', (predicate) => false);//pour ne pas retourner en ariere on utilise (pushNamedAndRemoveUntil)aller sans retour
                 } ,
-                trailing: Icon(Icons.chevron_right),
+                
               )
             ],
           ),
